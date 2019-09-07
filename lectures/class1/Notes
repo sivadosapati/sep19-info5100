@@ -1,0 +1,248 @@
+Marker
+
+Actions/Behaviors
+
+write
+draw
+throw
+pick
+
+Car
+
+Behaviors
+
+drive
+brake
+accelerate
+makeItHome
+selfPark
+
+SmartPhone
+
+Behaviors
+
+makePhoneCall
+sendAMessage
+takeAPicture
+playGames
+browseInternet
+
+I'm eating a salad
+
+Number
+
+	int number;
+
+Professor
+	Data:
+		Name name
+		TeachingExperience teachingExperience
+		WorkExperience workExperience
+		Courses courses
+		OfficeHours officeHours
+		Email email
+	
+	Behaviors:
+		teach()
+		answerQuestions()
+		guideStudents()
+		doResearch()
+		giveAssignments()
+		gradeStudents()
+		coachStudents()
+		provideCareerAdvice()
+		takeAttendance()
+		introduceTA( TA ta1, TA ta2)
+		int getStudentsFromChinaCount(){
+			Student a, b, c, d, e, f;
+			int count = 0;
+			if( a.areYouFromChina()){
+				count = count + 1;
+			}
+			if(b.areYouFromChina()){
+				count = count + 1;
+			}
+			..
+			
+			return count;
+
+			
+			
+		}
+		
+		int getStudentsFromIndiaCount(){
+			Student s[60];
+			Student snehal
+			Student fancy;
+			Student ryan;
+			Student yali
+			s[0] = ryan;
+			s[1] = yali
+			
+			int count = 0;
+			for(int index = 0;index< 60;index= index+1){
+				print("Start");
+				print("Next");
+				
+				if( s[index].areYouFromIndia()){
+					count = count + 1;
+				}
+				else{
+					print("Not from India");
+				}
+			}
+			return count;
+		
+		}
+
+Student
+
+Information/Data:
+	Name name
+	Qualification qualification
+	RollNumber nuid
+	double gpa;
+	Country country
+	Courses enrolledCourses
+	Address address
+	Email email
+	EmergencyContact emergencyContact
+	Skills skills
+
+Behaviors:
+	Grade getGrade(){
+		Grade A, B, C, NO;
+		if( gpa > 3){
+			return A;
+		}
+		if( gpa > 2){
+			return B;
+		}
+		if( gpa > 1){
+			return C;
+		}
+		return NO;
+	}
+	learn()
+	listenToProfessor()
+	completeAssignments()
+	takeTests()
+	askQuestions()
+	attendTheClass()
+	takeNotes()
+	Boolean areYouFromChina(){
+		if country is "china" then
+			return yes
+		else
+			return no
+			
+		if( country.equals("china")){
+			return Boolean.Yes
+		}
+		else
+		{
+			return Boolean.No
+		}
+	}
+	Book writeName(Book b, Pen p)
+
+
+Laptop
+
+	typeLetters()
+	
+Projector
+
+	transmittingImage()
+	
+Screen
+	
+	showingImage()	
+
+ClassRoom
+
+	startAJavaClass()
+	
+GreetingResponse
+	
+-----Program to start a class room ----
+
+Professor siva
+Student yuyang, sahiti, snehal, fancy
+TA terry, divya
+ClassRoom neu402
+Projector rightProjector, leftProjector
+Screen leftScreen, rightScreen
+Laptop sivaLaptop
+Microphone neuMicrophone
+
+
+
+startAJavaClass(){
+	siva.stepIntoClass()
+	yuyang.sitInClass()
+	sahiti.sitInClass()
+	snehal.sitInClass()
+	..
+	siva.greetStudents()
+	siva.takeAttendance()
+	siva.introduceTA(divya, terry)
+	divya.greetStudents()
+	terry.greetStudents()
+	if(newMicrophone.isNotWorking()){
+		HelpDesk hd;
+		Batteries b = hd.getMeBatteries();
+		if(b == null){
+			siva.speakLouder();
+		}
+		else{
+			neuMicrophone.replaceBatteries(b);
+		}
+	}
+	neuMicrophone.amplifyLecture()
+	laptop.sendInformationOverInternet()
+	
+	yuyang.listen()
+	sahiti.listen()
+	
+	siva.teach()
+	yuyang.listenToProfessor()
+	sahiti.listenToProfessor()
+	
+	Question programmingQuestion = siva.askQuestion()
+	
+	Answer answer = snehal.answerQuestion(programmingQuestion)
+	
+	siva.provideFeedbackToAnswer(answer)
+
+	Question computerQuestion = siva.askQuestion()
+	
+	Answer answer = fancy.answerQuestion(computerQuestion)
+	
+	siva.provideFeedbackToAnswer( answer)
+	
+	siva.teachConcepts()
+	
+	siva.provideCourseDetails()
+	
+	Question studentQuestion = meghana.askQuestion()
+	
+	siva.answerQuestion(studentQuestion)
+	
+	siva.thankStudents()
+	siva.giveAssignment()	
+
+}
+
+
+Source Code
+Compiled Code
+Executable Code
+Output
+
+
+
+
+
+
+			

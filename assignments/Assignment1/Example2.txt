@@ -1,0 +1,111 @@
+Design an App for calling Taxi
+
+User can
+1. Login App
+2. Call a Taxi
+3. Review order
+4. Contact driver
+5. Cancel
+
+----------------------------------------------------------------------------------------------------------------------
+Class: User
+Data: name, phone, userLocation, destination, numberOfPassager, order
+Behaviour:
+loginApp() {
+	App.login(name);
+}
+callTaxi() {
+if(CreditCard.cardAvailable())
+		App.match(this.Data);
+	else
+		Error;
+}
+review() {
+	System.out.print(this.order);
+}
+contactDriver() {
+	HelpService.call(order.driver.Data.phone);
+}
+cancel() {
+	App.orderEnd();
+}
+
+----------------------------------------------------------------------------------------------------------------------
+Class: Driver
+Data: name, phone, driverLicence, driverLocation, driverPhoto, order
+Behaviour:
+confirmOrder(userLocation) {
+	System.out.print(userLocation);
+	if(confirm)  return true;
+	else return false;
+}
+contactUser() {
+	HelpService.call(order[‘userData’].phone);
+}
+pickupUser() {
+	App.orderEnd();
+}
+
+----------------------------------------------------------------------------------------------------------------------
+Class: App
+Data: status
+Behaviour:
+login(userName) {
+	List<String> nameList;
+	foreach(String name in nameList) {
+		if(userName == name)
+status = true;
+}
+status = false;
+}
+match(userData) {
+	List<T> info;
+	Driver driver = MapService.findDriver(userData.userLocation);
+	info.add(userData);
+	info.add(driver.Data);
+	Driver.order = info;
+User.order = info;
+}
+orderEnd() {
+	alert(Driver);
+	alert(User);
+	Driver.order = null;
+	User.order = null;
+}
+
+----------------------------------------------------------------------------------------------------------------------
+Class: CreditCard
+Data: type, bankName, cardNumber, address, securityCode, expireDate
+Behaviour:
+cardAvailable() {
+	Date currentDate = new Date();
+return currentDate.compareTo(expireDate);
+}
+
+----------------------------------------------------------------------------------------------------------------------
+Class: MapService
+Data: trafficCondition, Road
+Behaviour:
+findDriver(userLocation) {
+	List<Driver> driverList;
+	Driver TaxiDriver;
+	foreach(Driver driver in driverList) {
+		if(Driver.driverLocation is nearer)
+			TaxiDriver = driver;
+}
+if(TaxiDriver.confirmOrder(userLocation) == false) {
+	TaxiDriver = this.findDriver(userLocation);
+}
+return TaxiDriver;
+}
+
+----------------------------------------------------------------------------------------------------------------------
+Class: HelpService
+Data:
+Behaviour:
+call(number) {
+	phoneCallAPI.call(number);
+}
+
+
+

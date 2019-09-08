@@ -1,0 +1,26 @@
+In this assignment, you should translate a complex problem into a concrete set of objects
+and identify interactions among those objects to solve the problem.
+
+Questions:
+Design a Traffic Controller System for a Junction
+Design a Car Rental System
+Design a Course Registration Platform
+Design a vending Machine (will accept coins of different denominations and vends out candies, soda etc)
+Design a Parking lot
+
+Steps to approach a problem:
+Understand the requirements
+Hash out the primary use cases
+Identify key Objects
+Identify operations supported by Objects
+Identify interactions between Objects
+
+Examples have been attached for reference.
+
+Note:
+There is no one right answer to the question
+Think of as many scenarios, behaviours, objects as you can
+Write only pseudo code, not actual code
+This will be individual submission, you should come up with your own ideas but discussion with classmates is encouraged
+
+Deadline : 15th September 2019, 12:00 pm

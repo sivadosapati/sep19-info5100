@@ -1,0 +1,109 @@
+Book a Hotel Room before going for a trip
+
+Traveller can
+1. Login
+2. search hotels based on parameters(location, budget, landmark)
+3. book rooms
+4. cancel booking
+
+------------------------------------------------
+Class: Traveller
+State: travellerId, name, phoneNumber, creditCardDetails
+Behaviour: searchHotels(SearchParams) {
+      List<Hotels> hotels = HotelService.search(searchParams);
+      // display hotels to user
+}
+Behaviour: bookHotel(){
+       BookingDetails =  HotelService.bookHotel(hotelId,checkinDate,checkOutDate, numberOfRooms)
+}
+Behaviour: cancelHotel(bookingId){
+        HotelService.cancelHotel(bookingId)
+}
+-----------------------------------------------------------------------
+Class: CreditCardDetails
+State: name, cardNumber, cardType, expiryDate
+Behaviour:  isCardExpired() {
+        Date today = new Date();
+        if(today.compareTo(expiryDate) == 1)
+             return true;
+        return false;
+    }
+
+---------------------------------------------------------------------
+Class: HotelOwner
+State: ownerId, name, address, list of hotels
+
+Class: Hotel
+State: name, address, ownerId, closestLandmarks, roomPrice, totalRooms, hotelId, reviews, rating
+Behaviour:  checkAvailability(date,  numberOfRooms) {
+   // check availability of number of rooms on specific date
+   }
+
+----------------------------------------------------------------
+Class: HotelService
+Behaviour: search(searchParams) {
+            // call to fetch all hotels and store in List<Hotels> hotels
+                List<Hotel> availableHotels
+                List<Hotel> hotels
+
+                for ( i = 0; i < hotels.size(); i++) {
+                    //check if hotel is available for specific date
+                    Boolean isAvailable = true;
+                    while (searchParams.checkinDate.compareTo(searchParams.checkOutDate)) {
+                        if (!hotels.get(i).checkAvailability(searchParams.checkinDate, searchParams.numberOfRooms)) {
+                            isAvailable = false;
+                            break;
+                        }
+                        searchParams.checkinDate++;
+
+
+                    }
+                    if (isAvailable && hotels.get(i).closestLandmarks.contains(searchParams.closestLandmark)
+                            && searchParams.pinCodes.contains(hotels[i].pinCode)
+                            && hotels.get(i).price <= searchParams.maxPrice
+                            && hotels.get(i).price >= searchParams.minPrice
+                            && hotels.get(i).name.indexOf(searchParams.name)) {
+                        availableHotels.add(hotels.get(i));
+                    }
+
+                }
+                return availableHotels;
+            }
+
+
+Behaviour:  bookHotel(hotelId,checkinDate,checkOutDate, numberOfRooms){
+           //fetch hotel object from hotelid
+           Hotel hotel;
+           //calculate number of days
+           int numberOfDays;
+
+           //fetch creditcarddetails if saved
+           if(!creditCardDetails.isCardExpired()){
+               //calculate price on the basis of price of hotel, number of rooms booked, number of days
+               int price = hotel.price * numberOfDays * numberOfRooms;
+               PaymentService.makePayment(travellerId, price )
+               return bookingDetails;
+               and generate booking id
+           }
+           else throw new Exception("Card is Expired");
+       }
+
+Behaviour: cancelBooking(bookingId){
+        fetch traveller object and fare
+         PaymentService.initiateRefund(traveller, price)
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

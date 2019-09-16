@@ -13,6 +13,7 @@ public class Assignment2 {
         return 0.0;
     }
 
+    
     /*
         This method should print either "Fizz", "Buzz" or "FizzBuzz"
         "Fizz" - if id of employee is divisible by 3
@@ -23,6 +24,7 @@ public class Assignment2 {
         // @TODO
     }
 
+    
     /*
         This method should calculate tax for an employee in dollars
         If salary of employee is less than or equal to 2500, tax should be 10%
@@ -33,7 +35,8 @@ public class Assignment2 {
         // @TODO
         return 0.0;
     }
-
+    
+    
     /*
         We are given two employee objects.
         Implement this method to swap salaries of employees
@@ -42,6 +45,7 @@ public class Assignment2 {
         // @TODO
     }
 
+    
     /*
         Return number of employees whose age is greater than 50
         Note: Employee array is passed, not employee
@@ -51,6 +55,41 @@ public class Assignment2 {
         return 0;
     }
 
+    
+    /*
+        Implement this method to reverse firstName of employee.
+        Ex. Before: employee.getFirstName() -> "John"
+        After : employee.getFirstName() -> "nhoJ"
+     */
+    public void reverseFirstName(Employee employee) {
+        // @TODO
+    }
+
+    
+    /*
+        Print "true" if employee's first name contain one or more digits
+        Print "false" if employee's first name doesn't contain any digit
+        Ex: employee.getFirstName() -> "ha8l" == true
+        employee.getFirstName() -> "hail" == false
+     */
+    public void isContainDigit(Employee employee) {
+        // @TODO
+    }
+
+    
+     /*
+        Write a method to raise an employee's salary to three times of his/her original salary.
+        Eg: original salary was 1000/month. After using this method, the salary is 3000/month.
+        DO NOT change the input in this method.
+        Try to add a new method in Employee class: public void raiseSalary(double byPercent) 
+        Call this new method.
+     */
+    public void tripleSalary(Employee employee) {
+        // @TODO
+    }
+    
+    
+    //Additional question for extra credit
     /*
         Implement this method to convert String[] to employees array.
         Ex: String[] employees = new String[]{"1,John,24,7500", "2,Hail,28,7899.90"};
@@ -67,24 +106,4 @@ public class Assignment2 {
         // @TODO
         return employees;
     }
-
-    /*
-        Implement this method to reverse firstName of employee.
-        Ex. Before: employee.getFirstName() -> "John"
-        After : employee.getFirstName() -> "nhoJ"
-     */
-    public void reverseFirstName(Employee employee) {
-        // @TODO
-    }
-
-    /*
-        Print "true" if employee's first name contain one or more digits
-        Print "false" if employee's first name doesn't contain any digit
-        Ex: employee.getFirstName() -> "ha8l" == true
-        employee.getFirstName() -> "hail" == false
-     */
-    public void isContainDigit(Employee employee) {
-        // @TODO
-    }
-
 }

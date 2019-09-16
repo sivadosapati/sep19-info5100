@@ -1,5 +1,8 @@
 package Assignment2;
 
+/**
+ * Submit it on or before 22nd September 2019 , 12:00 pm
+ */
 public class Assignment2 {
     /*
         This method should return the sum of salaries of employees having salary greater than 5000
@@ -47,4 +50,41 @@ public class Assignment2 {
         // @TODO
         return 0;
     }
+
+    /*
+        Implement this method to convert String[] to employees array.
+        Ex: String[] employees = new String[]{"1,John,24,7500", "2,Hail,28,7899.90"};
+        This String array of length 2 contains 2 employees in form of string, where
+        id = 1
+        firstName=John
+        age=24
+        salary=7500
+        convert each string to employee object.
+        Hint: Use String methods. Refer : https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
+     */
+    public Employee[] createEmployees(String[] employeesStr) {
+        Employee[] employees = new Employee[employeesStr.length];
+        // @TODO
+        return employees;
+    }
+
+    /*
+        Implement this method to reverse firstName of employee.
+        Ex. Before: employee.getFirstName() -> "John"
+        After : employee.getFirstName() -> "nhoJ"
+     */
+    public void reverseFirstName(Employee employee) {
+        // @TODO
+    }
+
+    /*
+        Print "true" if employee's first name contain one or more digits
+        Print "false" if employee's first name doesn't contain any digit
+        Ex: employee.getFirstName() -> "ha8l" == true
+        employee.getFirstName() -> "hail" == false
+     */
+    public void isContainDigit(Employee employee) {
+        // @TODO
+    }
+
 }

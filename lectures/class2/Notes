@@ -1,0 +1,216 @@
+Java Program structure
+Data Types
+Logic - If/Else, For loops
+String and other data structures
+Arrays
+
+class Marker{
+	String color;
+	float price;
+	boolean abilityToWrite;
+	void writeOnBoard(){
+	
+	}
+	
+	boolean canWrite(){
+		return abilityToWrite;
+	}
+}
+
+Marker red = new Marker();
+Marker blue = new Marker();
+Marker brown = new Marker();
+
+red.color
+
+class <<Name>>{
+	
+	<<Type>> name1;
+	<<Type>> name2;
+	
+	void methodA(){
+	
+	}
+	
+	int methodB(int x){
+		return 3 + 5;
+	
+	}
+
+}
+---- 8 Data Types ----
+byte = 1
+short = 2
+int = 4
+long = 8
+
+float = 4
+double = 8
+
+char = 2
+boolean = 1 byte
+
+int[] numbers;
+char[] letters;
+float[] prices;
+
+char[] name 
+"Angika"
+
+char firstLetter = 'A'
+char secondLetter = 'n'
+char thirdLetter = 'i'
+
+char[] name = new char[] {'A','n','g','i','k','a'};
+
+String name = new String("Angika Singh");
+String name = "Angika Singh";
+
+
+
+
+
+
+
+
+
+Marker m = new Marker();
+
+
+00
+01
+10
+11
+
+char initialOfPerson = 'A';
+char digit = '1';
+int digit = 1;
+char characterOnKeyBoard = ';'
+'(' 
+'-'
+byte ageOfPerson = 25
+int approxPopulationInChina = 1400000000
+long totalPopultionInWorld
+
+float priceOfFruit = 0.25F;
+double distanceBetweenTwoPlaces = 5.4
+
+boolean raining = false;
+boolean isExpensive
+boolean comingToClass
+boolean canMarkerWrite;
+boolean lightState
+boolean childCrying
+
+
+a > b
+a < b
+a == b
+
+expr1 && expr2
+expr1 || expr2
+
+grades && assignment && comingToClass
+
+
+boolean isMeritStudent(){
+	if( grades > 3.75f && assignmentsDone == true && comingToClass == true)
+}
+------
+if(condition){
+
+}
+----
+
+if(condition){
+
+}
+else{
+
+}
+
+for loops
+while loops
+
+for(init;condition;increment){
+
+}
+----
+for(int i=0;i<10;i++){
+
+}
+----
+int i = 0;
+for(;;){
+	if( i >=10){
+		break;
+	}
+	i = i + 1;
+}
+--
+while(<<expre>>){
+
+}
+----
+int i =0;
+while( i < 10){
+ i = i+1;
+
+}
+-------
+
+String n1 = "Siva";
+String n2 = new String("Siva");
+String n3 = "Siva";
+String n5 = new String("Siva")
+String n4 = "Siva Dosapati";
+
+API : Application Program Interface
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

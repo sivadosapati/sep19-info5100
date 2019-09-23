@@ -1,0 +1,35 @@
+Sep 20
+
+OOPS Concepts : Object Oriented Programming Semantics
+
+Objects, Creation - Construction (Constructors), Destruction (Destructors)
+Encapsulation
+	- Make all the data in a class private
+	- Define getter method to access the data (only for reading)
+	- Define setter method to modify the data (only for changing)
+		- Potentially write logic in the setter if you want to control how the data can be changed
+
+Abstraction
+
+Phone a;
+Phone b;
+
+void makeCall(Phone b){
+	makeContact(b);
+	openConnection(b);
+	establishNetwork(b);
+	exchangeWords(b);
+
+}
+
+
+Inheritance
+
+
+Oct 11 (Not available)
+
+Oct 7,8 (Monday or Tuesday)
+
+
+
+

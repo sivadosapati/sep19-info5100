@@ -1,3 +1,7 @@
+Note:
+1.Complete All Questions
+2.Deadline : 30th September 2019, 12:00pm
+
 Q1. Write a Java class named 'Course'
 It should have following members
 courseId

@@ -1,0 +1,49 @@
+OOPS
+	Inheritance
+	Polymorphism
+		Method overloading
+		Method overriding
+Abstract Classes
+Interfaces
+packages
+static
+final
+
+-----
+
+Apple is a Fruit
+Banana is a Fruit
+iPhone is a Phone
+laptop is a computer
+car is a vehicle
+professor is a person
+male is a person
+doctor is a person
+
+
+---
+
+private						: Not visible to anyone outside the class
+public						: Visible to everyone in and outside the class
+protected					: Visible to the class and its children
+default (no scope)			: Visible to the class, its children and other classes in the package
+----
+
+Inheritance is a way to reuse classes
+Inheritance will happen in a situation where the relationship between two classes uses "is a " pattern
+All child classes will inherit data, methods and constructors from the base class
+Every child class will only have one base class (aka parent class)
+If a child class doesn't have a parent class, its parent will be Object class
+Every child class can override behavior from base class
+
+-----
+
+Abstract classes can't be created. Essentially, Objects of Abstract classes can't be instantiated.
+Abstract class can have abstract method
+Abstract method is just the definition of the method without implementation
+If a class has abstract method, it has to become an abstract class
+
+---
+
+Interface is a contract that you expect from the object that you are planning to interact with
+Interface is a collection of method definitions or behaviors provided by the object

@@ -1,0 +1,120 @@
+final keyword :
+	data with final scope can't be changed after they are initialized
+	methods with final scope can't be overriden in the child classes
+	classes with final scope can't be extended by another class
+static keyword
+	static variables are the ones that are common for all the objects of that class
+	static methods can be invoked through class as against an Object
+
+packages
+	logical organization of java classes
+	
+/*catch (RainingException re) {
+			System.out.println("Raining. I will skip");
+		} catch (NotFeelingWellException nfwe) {
+			System.out.println("Not feeling well. I will skip");
+		} */
+
+
+Exception Handling
+
+	- A scenario where an unexpected problem happens in the code
+	- Use try() and catch() to handle the exception
+	- Use throw new xxx() when you want to throw an Exception
+	- Use multiple catch blocks to catch different types of Exceptions
+	- Use finally() block to do an operation irrespective of an exception or not
+-------
+What is the purpose of an Abstract class?
+
+abstract class Vehicle{
+
+}
+
+abstract class Fruit{
+
+}
+
+class Apple extends Fruit{
+
+}
+
+abstract class Professor{
+
+}
+
+class JavaProfessor extends Professor{
+
+}
+
+class DatabaseProfessor extends Professor{
+
+}
+
+class Professor{
+	ProfessorType type;
+}
+
+enum{
+	Java, C, Arts, Datbase
+
+}
+
+
+class Food{
+	FoodType ft;
+	void eat(){
+		if( ft == FoodType.Burger) eatWithHand();
+		if( ft == FoodType.Icecream) eatWithSpoon();
+	}
+}
+
+enum FoodType{
+	Burger, Chocolate, Icecream;
+}
+
+Food f = new Food(FoodType.Burger);
+
+-----------------------------
+What is the difference between Abstract class and Interface?
+
+- Class can be extended only once by another class and multiple interfaces can be implemented by a class
+
+abstract class Phone{
+
+}
+
+class Camera{
+	void takePicture(){}
+}
+
+interface Camera{
+	void takePicture();
+}
+
+interface Printer{
+	void print();
+}
+
+interface InternetBrowser{
+	void browse();
+}
+
+class IPhone extends Phone implements Camera, Printer, InternetBrowser{
+
+}
+
+class Laptop implements Camera, Printer, InternetBrowser{
+
+}
+
+interface Energy{
+	void provideCalories();
+}
+
+Apple is a Fruit and gives some Energy
+
+
+class Apple extends Fruit implements Energy{
+
+
+}

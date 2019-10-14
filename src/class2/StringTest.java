@@ -4,6 +4,7 @@ public class StringTest {
 
 	public static void main(String[] args) {
 		int index = 10;
+		
 		String n1 = "Siva";
 		System.out.println(n1.length());
 		System.out.println(n1.substring(0, 2));

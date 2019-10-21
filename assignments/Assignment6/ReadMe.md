@@ -71,8 +71,7 @@ IV. Given two strings s and t , write a function to determine if t is an anagram
     
  V. Given an array of integers arr, 
  write a function that returns true if and only if the number of occurrences of each value in the array is unique. (Score 1)
-    
-     
+ Extra Credit.
     
         Example 1:
         

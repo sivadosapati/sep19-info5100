@@ -1,3 +1,5 @@
+Deadline: 29th October 2019, 11:59pm
+
 I. Design an Automated Teller Machine (ATM). (Score 5).
 
     - Create a User class with attributes name, age, address, phoneNumber and bankAccountNumber.

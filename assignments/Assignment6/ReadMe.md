@@ -48,12 +48,10 @@ III. Given two strings s and t , write a function to determine if t is an anagra
             You may assume the string contains only lowercase alphabets.
     
             public boolean isAnagram(String s, String t) {}
-    
- IV. Given an array of integers arr, 
- write a function that returns true if and only 
- if the number of occurrences of each value in the array is unique. (Score 2)
-    
+       
      
+ IV. Given an array of integers arr, 
+ write a function that returns true if and only if the number of occurrences of each value in the array is unique. (Score 1)
     
         Example 1:
         
@@ -79,7 +77,7 @@ III. Given two strings s and t , write a function to determine if t is an anagra
         
         public boolean uniqueOccurrences(int[] arr) {}
         
- V. Design a HashMap without using any built-in hash table libraries.
+ V. Design a HashMap without using any built-in hash table libraries. (Score - 1)
     
     To be specific, your design should include these functions:
     

@@ -1,7 +1,9 @@
 package class6;
 
+import java.util.List;
+
 public interface StudentsManager {
-	public void addStudent(Student student);
+	public void addStudent(Student student) throws RuntimeException;
 
 	public void deleteStudent(String id);
 
@@ -12,5 +14,7 @@ public interface StudentsManager {
 	public int getStudentCount();
 
 	public void display();
+
+	public List<Student> getStudents();
 
 }

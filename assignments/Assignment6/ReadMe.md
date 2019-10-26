@@ -1,3 +1,5 @@
+Deadline: 29th October 2019, 11:59pm
+
 I. Design an Automated Teller Machine (ATM). (Score 5).
 
     - Create a User class with attributes name, age, address, phoneNumber and bankAccountNumber.
@@ -29,31 +31,11 @@ I. Design an Automated Teller Machine (ATM). (Score 5).
     - Machine should not allow user to withdrawal more amount than his availableBalance.
 
     - You can add additional functions to make it pretty. UI is not required.
-
-
-II.  When a program fails due to an uncaught exception, 
-   the system automatically prints out the exception’s stack trace.
-   If the failure is not easily reproducible, it may be difficult or impossible to get any more information.
-   Therefore, it is critically important that the exception’s toString() method return, as much information as possible concerning the cause of the failure.
-   In other words, the detail message of an exception should capture the failure for subsequent analysis. 
-   To capture the failure, the detail message of an exception should contain the values of all parameters and fields that “contributed to the exception.”
-   Create your own MyIndexOutOfBoundException Class. It should contain these parameters.  
-   (Score 2).
-
-- lowerBound - the lowest legal index value.
-
-- upperBound - the highest legal index value.
-
-- index - the current index value.
-
-Test your code in main method, by creating an indexOutOfBoundException. Output error message should be like this:
-
- “Error Message: Index: 10, but Lower bound: 0, Upper bound: 9” 
  
+
+II. Write two differences between ArrayList and LinkedList. (Score 1)
  
-III. Write two differences between ArrayList and LinkedList. (Score 1)
- 
-IV. Given two strings s and t , write a function to determine if t is an anagram of s. (Score 2)
+III. Given two strings s and t , write a function to determine if t is an anagram of s. (Score 2)
     
             Example 1:
     
@@ -68,10 +50,10 @@ IV. Given two strings s and t , write a function to determine if t is an anagram
             You may assume the string contains only lowercase alphabets.
     
             public boolean isAnagram(String s, String t) {}
-    
- V. Given an array of integers arr, 
+       
+     
+ IV. Given an array of integers arr, 
  write a function that returns true if and only if the number of occurrences of each value in the array is unique. (Score 1)
- Extra Credit.
     
         Example 1:
         
@@ -96,3 +78,29 @@ IV. Given two strings s and t , write a function to determine if t is an anagram
         
         
         public boolean uniqueOccurrences(int[] arr) {}
+        
+ V. Design a HashMap without using any built-in hash table libraries. (Score - 1)
+    
+    To be specific, your design should include these functions:
+    
+    put(key, value) : Insert a (key, value) pair into the HashMap. If the value already exists in the HashMap, update the value.
+    get(key): Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key.
+    remove(key) : Remove the mapping for the value key if this map contains the mapping for the key.
+    
+    Example:
+    
+    MyHashMap hashMap = new MyHashMap();
+    hashMap.put(1, 1);          
+    hashMap.put(2, 2);         
+    hashMap.get(1);            // returns 1
+    hashMap.get(3);            // returns -1 (not found)
+    hashMap.put(2, 1);          // update the existing value
+    hashMap.get(2);            // returns 1 
+    hashMap.remove(2);          // remove the mapping for 2
+    hashMap.get(2);            // returns -1 (not found) 
+    
+    Note:
+    
+    All keys and values will be in the range of [0, 1000000].
+    The number of operations will be in the range of [1, 10000].
+    Please do not use the built-in HashMap library.

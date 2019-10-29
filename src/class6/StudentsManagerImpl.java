@@ -1,5 +1,8 @@
 package class6;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class StudentsManagerImpl implements StudentsManager {
 
 	private Student[] students = new Student[5];
@@ -17,7 +20,7 @@ public class StudentsManagerImpl implements StudentsManager {
 
 	private void expandStudents() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -89,6 +92,11 @@ public class StudentsManagerImpl implements StudentsManager {
 			System.out.println(x);
 		}
 
+	}
+
+	@Override
+	public List<Student> getStudents() {
+		return Arrays.asList(students);
 	}
 
 }

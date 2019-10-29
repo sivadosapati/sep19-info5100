@@ -6,12 +6,13 @@ public class University {
 
 	public static void main(String[] args) {
 		// StudentsManager manager = new StudentsManagerImpl();
-		StudentsManager manager = new StudentsManagerListImpl();
+		// StudentsManager manager = new StudentsManagerListImpl();
+		StudentsManager manager = new StudentsManagerMapImpl();
 		operateOnStudents(manager);
 
 	}
 
-	private static void operateOnStudents(StudentsManager manager) {
+	public static void operateOnStudents(StudentsManager manager) {
 
 		Scanner scanner = new Scanner(System.in);
 		while (true) {

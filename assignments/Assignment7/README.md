@@ -10,7 +10,7 @@ Write a program that read sentences from a file and reverse sentences word by wo
 ```
 Example:
 Input file: the sky is blue.
-Output file: blue is the sky.
+Output file: blue is sky the.
 ```
 ---
 

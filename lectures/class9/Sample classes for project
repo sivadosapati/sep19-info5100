@@ -1,0 +1,62 @@
+Dealer
+
+class DataObject{
+	private String id
+}
+
+class Dealer extends DataObject{
+
+
+	private String name;
+	private Address address;
+	private String phone;
+	private Collection<Vehicle> vehicles;
+	//private Vehicles vehicles;
+	private String emailId;
+	private Incentives incentives;
+	private Leads leads;
+}
+
+class Vehicle{
+	private String id;	
+	private String dealerId;
+	private String brand;//Honda
+	private String model;//Accord
+	private int year;
+	private String type;//SEDAN, SUV, VAN, PICKUP; private VehicleType type;
+	private Category category;//enum Category{ NEW, USED };
+	private String color;
+	private float price;
+	private float mileage;
+	private Collection<Incentive> matchedIncentives;
+	private float salePrice;
+	private int peopleExpressingInterestInThisCar;
+
+}
+
+class Incentive{
+	private String id;
+	private Date startDate;
+	private Date endDate;
+	private float discount;
+	private String title;
+	private String disclaimer;
+	private VehicleCategory vehicleCategory;
+	private Collection<String> vehicleIds;
+}
+
+class User{
+	private String id;
+	private String name;
+	private String email;
+	private String phone;
+}
+
+class Lead extends DataObject{
+	private String dealerId;
+	private String vehicleId;
+	private String userId;
+	private Date dateOfExpressingInterest;
+	private String consumerComment;
+	private String dealerComment;
+}
